@@ -1,0 +1,170 @@
+/* NAV */
+header {
+    z-index: 5;
+}
+
+.logo, .hamburger {
+    z-index: 100;
+}
+.signUp {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.items {
+    z-index: 0;
+    position: fixed;
+    display: flex;
+    left: 0%;
+    top: -100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--input);
+    text-align: center;
+    transition: 500ms;
+}
+
+.navItem {
+    margin: 1em 0;
+}
+
+.items.active {
+    position: flex;
+    flex-direction: column;
+    z-index: 0;
+    left: 0%;
+    top: 5%;
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 2em;
+    display: inline;
+}
+
+.headBreak {
+    display: none;
+}
+
+.heroBreak {
+    display: none;
+}
+
+.text-large {
+    font-size: var(--small);
+    line-height: 1.5em;
+}
+
+.textAndImage {
+    gap: 1em;
+}
+
+.contents-1 {
+    padding-right: 0;
+    margin-left: 10em;
+    display: inherit;
+}
+.circleA {
+    margin: 2em;
+    margin-left: -2em;
+    height: 6em;
+}
+
+article {
+    margin-left: 0;
+}
+
+.image {
+    margin-left: -10em;
+}
+
+
+/* OPTIONS */
+.container {
+    margin: 4em 0em 1em 0em;
+}
+
+.options {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.optionHeadBreak {
+    display: none;
+}
+.optionHead {
+    padding-left:4em;
+}
+.devider {
+    margin: 0;
+}
+.item {
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+
+}
+li.item {
+    display: block-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2em;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.header3 {
+    font-size: var(--large);
+}
+
+img.optionImage {
+    width: 70%;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+/* RECCOMENDATION */
+
+.cards {
+    flex-wrap: wrap;
+    padding-left: 0em;
+    justify-content: center;
+}
+.card {
+    margin: 2em 1em;
+
+}
+
+
+/* FOOTER */
+footer {
+    gap: 2em;
+}
+
+.input, .vl {
+    display: none;
+}

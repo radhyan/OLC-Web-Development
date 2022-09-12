@@ -1,0 +1,122 @@
+/* NAV */
+header {
+    z-index: 5;
+}
+
+.logo, .hamburger {
+    z-index: 100;
+}
+.signUp, .mynav {
+    display: none;
+}
+.textAndImage {
+    gap: 4em;
+}
+.hamburger {
+    display: block;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.items {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    left: 0%;
+    top: -100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--input);
+    text-align: center;
+    transition: 500ms;
+}
+
+.navItem {
+    margin: 1em 0;
+}
+
+.items.active {
+    position: flex;
+    flex-direction: column;
+    z-index: 1;
+    left: 0%;
+    top: 10%;
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    display: inline;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 2em;
+    display: inline;
+}
+
+.headBreak {
+    display: none;
+}
+
+.heroBreak {
+    display: none;
+}
+
+.text-large {
+    font-size: var(--small);
+    line-height: 1.5em;
+}
+
+.contents-1 {
+    padding-right: none;
+    margin-left: 10em;
+    display: inline-flex;
+}
+
+article {
+    margin-left: 0;
+}
+
+.circleA {
+    margin: 2em 1em 1em 1em;
+}
+
+/* OPTIONS */
+.container {
+    margin: 4em 0em 1em 8em;
+}
+
+.options {
+    width: auto;
+}
+
+
+
+/* RECCOMENDATION */
+.reccomendations {
+    padding: 8em 8em 8em 9.5em;
+}
+.cards {
+    flex-wrap: wrap;
+    padding-left: 7em;
+}
+.card {
+    margin-bottom: 2em;
+}
+
+/* FOOTER */
+footer {
+    gap: 2em;
+}
+
+.input, .vl {
+    display: none;
+}

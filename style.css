@@ -9,7 +9,7 @@ header {
     color: var(--head);
     position: sticky;
     top: 0;
-}
+} 
 .navbar {
     position: sticky;
     align-items: center;
